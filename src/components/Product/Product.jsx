@@ -1,6 +1,10 @@
 import { useState } from "react";
 import styles from "./styles.module.scss";
 import Select from "../Select/Select";
+import black from "src/assets/black.png";
+import orange from "src/assets/orange.png";
+import pink from "src/assets/pink.png";
+import yellow from "src/assets/yellow.png";
 
 const Product = () => {
   const [currentImg, setCurrentImg] = useState("black");
@@ -19,28 +23,28 @@ const Product = () => {
 
       <div className={styles.product__photoContainer}>
         <img
-          src="src/assets/black.png"
+          src={black}
           alt="black slippers"
           className={`${styles.product__bigImg} ${
             currentImg === "black" ? styles.product__bigImg_isActive : ""
           }`}
         />
         <img
-          src="src/assets/orange.png"
+          src={orange}
           alt="orange slippers"
           className={`${styles.product__bigImg} ${
             currentImg === "orange" ? styles.product__bigImg_isActive : ""
           }`}
         />
         <img
-          src="src/assets/pink.png"
+          src={pink}
           alt="pink slippers"
           className={`${styles.product__bigImg} ${
             currentImg === "pink" ? styles.product__bigImg_isActive : ""
           }`}
         />
         <img
-          src="src/assets/yellow.png"
+          src={yellow}
           alt="yellow slippers"
           className={`${styles.product__bigImg} ${
             currentImg === "yellow" ? styles.product__bigImg_isActive : ""
