@@ -10,7 +10,7 @@ const Header = () => {
         </p>
       </div>
       <div className={styles.header__logo}>
-        <img src={src} alt="logo" className={styles.header__img} />
+        <img src={logo} alt="logo" className={styles.header__img} />
       </div>
     </header>
   );
