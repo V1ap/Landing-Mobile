@@ -1,8 +1,22 @@
-# React + Vite
+# Landing-Mobile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**О проекте:**\
+   Проект был разработан в рамках тестового задания в команию Toster media в сентябре 2023
 
-Currently, two official plugins are available:
+**Как запустить проект:**
+- Выполнить установку зависимостей - `yarn`
+- Запустить Vite для разработки - `yarn dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Что сделано
+- Сверстан лендинг
+- Сверстаны Селекторы
+- Сделан переключатель картинок
+- Ссылка ведет на ютуб
+
+## Технологии
+- Vite
+- React
+- sass
+
+**Дополнительная информация:**\
+В задании говорилось что "Цены должны редактироваться в коде", не совсем понятно что под этим подразумевалось, поэтому я просто вынес их в отдельную папку как константы и импортировал в секцию :D
