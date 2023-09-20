@@ -1,0 +1,185 @@
+@import "src/vars/vars.scss";
+
+.product {
+  display: grid;
+  gap: 20px;
+  max-width: 390px;
+  width: 390px;
+  padding: 11px 16px 41px;
+  overflow: hidden;
+  background-color: $lightGrayColor;
+
+  &__topPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+  }
+
+  &__grade {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+
+  &__trustPilot {
+    display: inline-block;
+    width: 72px;
+    height: 18px;
+    background: url("src/assets/TrustpilotLogo.svg") center center;
+    background-size: cover;
+  }
+
+  &__rank {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    color: $salatColor;
+    text-decoration: underline $salatColor;
+    text-decoration-skip-ink: none;
+  }
+
+  &__header {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  &__photoContainer {
+    position: relative;
+    width: 358px;
+    height: 232px;
+  }
+
+  &__bigImg {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    transition: opacity 0.5s ease;
+
+    &_isActive {
+      opacity: 1;
+    }
+  }
+
+  &__btnsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 80px;
+    height: 66px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+
+    &:hover:not(&_isActive) {
+      opacity: 0.6;
+    }
+
+    &.black {
+      background: url("src/assets/black.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &.orange {
+      background: url("src/assets/orange.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &.pink {
+      background: url("src/assets/pink.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &.yellow {
+      background: url("src/assets/yellow.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &_isActive {
+      opacity: 0.3;
+    }
+  }
+
+  &__info {
+    display: grid;
+    gap: 12px;
+  }
+
+  &__fastDelivery,
+  &__inStock {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+  }
+
+  &__param {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  &__stars {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  &__star {
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    background-image: url("src/assets/star.svg");
+  }
+
+  &__numberRated {
+    margin-left: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+  }
+
+  &__selectorsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  &__selectorsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+  }
+
+  &__selectorsHeader {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+  }
+
+  &__link {
+    padding: 11px 19px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    color: $whiteColor;
+    background-color: $salatColor;
+    border-radius: 15px;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: $darkSalatColor;
+    }
+  }
+}
