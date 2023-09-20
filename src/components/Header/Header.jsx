@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+import logo from "src/assets/logo.png";
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
         </p>
       </div>
       <div className={styles.header__logo}>
-        <img src="src/assets/logo.png" alt="" className={styles.header__img} />
+        <img src={src} alt="logo" className={styles.header__img} />
       </div>
     </header>
   );
